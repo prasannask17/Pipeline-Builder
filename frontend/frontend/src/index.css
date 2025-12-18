@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background: #020617;
+  color: #1f2937;
+  font-family: system-ui, sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* Toolbar styles */
+.toolbar {
+  padding: 10px;
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+}
+
+.toolbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.toolbar-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  color: rgb(241, 236, 236);
+  cursor: grab;
+}
+
+/* React Flow Controls container */
+.react-flow__controls {
+  background: #020617;       /* dark background */
+  border: 1px solid #334155; /* border */
+  border-radius: 8px;
+}
+
+/* WHITE ICONS */
+.react-flow__controls button {
+  color: white !important;      /* icon color */
+  fill: white !important;       /* for svg icons */
+  background: #0f172a;          /* button background */
+  border: none;
+}
+
+/* hover effect */
+.react-flow__controls button:hover {
+  background: #1e293b;
+  color: #22d3ee;
+}
+
+/* active / pressed */
+.react-flow__controls button:active {
+  background: #0369a1;
+  color: white;
+}
+
+/* remove ugly outline */
+.react-flow__controls button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* === MiniMap container === */
+.react-flow__minimap {
+  background: #020617 !important;     /* dark background */
+  border: 1px solid #334155 !important;
+  border-radius: 8px;
+}
+
+/* MiniMap nodes */
+.react-flow__minimap-node {
+  fill: #e6f0f4 !important;   /* node color in minimap */
+  stroke: #0ea5e9 !important;
+}
+
+/* MiniMap mask */
+.react-flow__minimap-mask {
+  fill: rgba(15, 23, 42, 0.8) !important;
+}
+
+/* === Tooltip when you hover MiniMap === */
+.react-flow__minimap-tooltip {
+  background: #0f172a !important;   /* tooltip bg */
+  color: white !important;          /* tooltip text */
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
